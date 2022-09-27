@@ -56,6 +56,10 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+textarea {
+    resize: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -367,6 +371,88 @@ nav a.active {
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
+}
+
+.form {
+    width: 450px;
+    height: 345px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--second-text-color);
+}
+
+.form-input {
+    /* position: relative;
+    display: inline-flex; */
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: var(--main-border-radius);
+    height: 40px;
+}
+
+/* .form-input::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-left: 15px;
+
+    background-color: red;
+
+    background-image: url(../images/modal-ico/name.svg);
+    background-size: contain;
+} */
+
+.form-comment {
+    height: 120px;
+}
+
+.submit-item {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--second-text-color);
+}
+
+.modal-submit {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.38;
+    letter-spacing: 0.06em;
+
+    border: none;
+    cursor: pointer;
+    color: var(--second-logo-color);
+    background-color: var(--accent-color);
+    border-radius: var(--main-border-radius);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit:hover,
+.modal-submit:focus,
+.modal-submit:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* advertising text  */
