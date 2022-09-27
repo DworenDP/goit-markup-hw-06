@@ -642,6 +642,27 @@ nav a.active {
     color: var(--second-logo-color);
 }
 
+.footer-mail {
+    margin-left: 93px;
+}
+
+.footer-mail-label {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--second-logo-color);
+}
+
+.footer-signup {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Portfolio  */
 
 /* Portfolio button */
