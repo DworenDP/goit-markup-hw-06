@@ -148,6 +148,36 @@
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
                         </button>
+                        <h2 class="modal-title">
+                            Залиште свої дані, ми вам передзвонимо
+                        </h2>
+                        <form>
+                            <label for="name">Ім'я</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                            />
+                            <label for="tel">Телефон</label>
+                            <input
+                                type="tel"
+                                name="tel"
+                                id="tel"
+                            />
+                            <label for="mail">Пошта</label>
+                            <input
+                                type="email"
+                                name="mail"
+                                id="mail"
+                            />
+                            <label for="comment">Коментар</label>
+                            <textarea
+                                name="comment"
+                                id="comment"
+                                rows="10"
+                                placeholder="Введіть текст"
+                            ></textarea>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -811,7 +841,7 @@
                     </ul>
                 </div>
                 <div class="footer-mail">
-                    <form>
+                    <form class="footer-form">
                         <ul class="footer-signup">
                             <li>
                                 <label
@@ -821,16 +851,27 @@
                                 >
                             </li>
                             <li>
-                                <input
-                                    type="email"
-                                    name="mail"
-                                    id="mail"
-                                    placeholder="E-mail"
-                                />
+                                <ul class="input-mail">
+                                    <li>
+                                        <input
+                                            class="footer-mail-input"
+                                            type="email"
+                                            name="mail"
+                                            id="mail"
+                                            placeholder="E-mail"
+                                        />
+                                    </li>
+                                    <li>
+                                        <button
+                                            type="submit"
+                                            class="footer-mail-btn"
+                                        >
+                                            Підписатися
+                                        </button>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
-
-                        <button type="submit">Підписатися</button>
                     </form>
                 </div>
             </div>

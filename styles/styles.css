@@ -332,13 +332,6 @@ nav a.active {
     cursor: pointer;
 
     background-color: var(--second-logo-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    background-color: var(--accent-color);
 }
 
 .close-img {
@@ -347,10 +340,33 @@ nav a.active {
     left: 50%;
     transform: translate(-50%, -50%);
     fill: var(--main-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover svg,
+.close-btn:focus svg {
+    fill: var(--accent-color);
 }
 
 .no-scroll {
     overflow: hidden;
+}
+
+/* Modal form  */
+
+.modal-title {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
 }
 
 /* advertising text  */
@@ -643,11 +659,16 @@ nav a.active {
 }
 
 .footer-mail {
+    display: block;
     margin-left: 93px;
 }
 
+.footer-form {
+    display: block;
+    padding-right: 0;
+}
+
 .footer-mail-label {
-    padding-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -658,9 +679,69 @@ nav a.active {
 }
 
 .footer-signup {
-    display: block;
+    /* display: block; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.input-mail {
     display: flex;
-    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer-mail-input {
+    padding-left: 15px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--second-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: var(--main-border-radius);
+}
+
+.footer-mail-btn {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    cursor: pointer;
+    color: var(--second-logo-color);
+    background-color: var(--accent-color);
+    border-radius: var(--main-border-radius);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-mail-btn:hover,
+.footer-mail-btn:focus,
+.footer-mail-btn:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-mail-btn::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-image: url(../images/footer-ico/icon\ send.svg);
+    background-size: contain;
 }
 
 /* Portfolio  */
