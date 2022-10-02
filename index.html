@@ -165,6 +165,7 @@
                                             type="text"
                                             name="name"
                                             id="name"
+                                            required
                                         />
                                         <svg
                                             viewBox
@@ -190,6 +191,7 @@
                                             type="tel"
                                             name="tel"
                                             id="tel"
+                                            required
                                         />
                                         <svg
                                             viewBox
@@ -215,6 +217,7 @@
                                             type="email"
                                             name="mail"
                                             id="mail"
+                                            required
                                         />
                                         <svg
                                             viewBox
@@ -242,17 +245,32 @@
                                         placeholder="Введіть текст"
                                     ></textarea>
                                 </li>
-                                <li>
+                                <li class="submit">
                                     <input
                                         type="checkbox"
                                         name="topic"
                                         value="submit"
                                         id="submit"
+                                        class="visually-hidden"
+                                        required
                                     />
+                                    <div class="checkbox">
+                                        <svg
+                                            viewBox
+                                            width="11"
+                                            height="8"
+                                            class="icon shape-codepen"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-tick"
+                                            ></use>
+                                        </svg>
+                                    </div>
                                     <label
                                         for="submit"
                                         class="submit-item"
-                                        >Погоджуюся з розсилкою та приймаю
+                                    >
+                                        Погоджуюся з розсилкою та приймаю
                                     </label>
                                     <a
                                         href=""
@@ -260,7 +278,6 @@
                                         >Умови договору</a
                                     >
                                 </li>
-                                <li></li>
                             </ul>
                             <button
                                 type="submit"
