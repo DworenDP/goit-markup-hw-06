@@ -15,6 +15,7 @@
     --second-logo-color: #ffffff;
     --portfolio-button-color: #f5f4fa;
     --main-icon-color: #afb1b8;
+    --big-btn-hover-color: #188ce8;
     --main-border-radius: 4px;
     --main-border-color: rgba(175, 177, 184, 1);
     --portfolio-wrap-color: rgba(33, 150, 243, 0.9);
@@ -269,16 +270,16 @@ nav a.active {
     padding: 10px 32px;
     border-radius: var(--main-border-radius);
     border: none;
+    cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active {
-    background-color: #188ce8;
+    background-color: var(--big-btn-hover-color);
 }
 
 /* modal-window */
@@ -395,25 +396,10 @@ nav a.active {
 }
 
 .form-input {
-    /* position: relative;
-    display: inline-flex; */
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: var(--main-border-radius);
     height: 40px;
 }
-
-/* .form-input::before {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    margin-left: 15px;
-
-    background-color: red;
-
-    background-image: url(../images/modal-ico/name.svg);
-    background-size: contain;
-} */
 
 .form-comment {
     height: 120px;
@@ -446,13 +432,15 @@ nav a.active {
     background-color: var(--accent-color);
     border-radius: var(--main-border-radius);
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit:hover,
 .modal-submit:focus,
 .modal-submit:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--big-btn-hover-color);
 }
 
 /* advertising text  */
@@ -746,7 +734,7 @@ nav a.active {
 
 .footer-mail {
     display: block;
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .footer-form {
@@ -762,12 +750,6 @@ nav a.active {
     text-transform: uppercase;
 
     color: var(--second-logo-color);
-}
-
-.footer-signup {
-    /* display: block; */
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 .input-mail {
@@ -810,14 +792,15 @@ nav a.active {
     color: var(--second-logo-color);
     background-color: var(--accent-color);
     border-radius: var(--main-border-radius);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail-btn:hover,
 .footer-mail-btn:focus,
 .footer-mail-btn:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--big-btn-hover-color);
 }
 
 .footer-mail-btn::after {
