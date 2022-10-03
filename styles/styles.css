@@ -316,6 +316,7 @@ nav a.active {
 
 .modal {
     position: absolute;
+    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -369,9 +370,7 @@ nav a.active {
 
 .modal-title {
     display: inline-block;
-    margin-top: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
+    text-align: center;
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -380,13 +379,6 @@ nav a.active {
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
-}
-
-.form {
-    width: 450px;
-    height: 345px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .form-item {
@@ -400,6 +392,8 @@ nav a.active {
 }
 
 .form-label {
+    margin-bottom: 4px;
+
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -447,6 +441,11 @@ nav a.active {
 }
 
 .submit-item {
+    display: flex;
+    align-items: center;
+
+    margin-left: 14px;
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -456,8 +455,8 @@ nav a.active {
 
 .modal-submit {
     display: block;
-    width: 200px;
-    height: 50px;
+
+    padding: 10px 52px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -517,7 +516,7 @@ nav a.active {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit input:checked + .checkbox {
+.submit input:checked + label .checkbox {
     background: var(--accent-color);
     border: none;
 }
